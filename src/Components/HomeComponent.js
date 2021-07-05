@@ -68,6 +68,7 @@ class HomeComponent extends React.Component {
         this.setState({ [key]: e.target.value })
     }
 
+    //Common method for show/hide div for insert/update
     showDiv = (flag, mode, data = []) => {
         this.setState({ isShow: flag, mode: mode, id: data.id })
         this.resetFields()
